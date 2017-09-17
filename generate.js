@@ -6,8 +6,14 @@ const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
 fs.readFile("test.html", 'utf8', function (err, data) {
-    if (err) throw err;
+    if (err) {
+        throw err;
+    } else {
+        generateEmailFileFrom(data);
+    }
+});
 
+function generateEmailFileFrom(data) {
     const dom = new JSDOM(data, { runScripts: "outside-only" });
     
     var document = dom.window.document;
@@ -15,21 +21,11 @@ fs.readFile("test.html", 'utf8', function (err, data) {
     // document.querySelector("div").textContent = "asdfadfasdfa"
     // console.log(document.querySelector("div").textContent)
 
+    saveToFile(document.documentElement.outerHTML);
+}
 
-
-    console.log(document.documentElement.outerHTML)
-
-    // jsdom.env(
-    //     data, ["http://code.jquery.com/jquery.js"],
-    //     function (errors, window) {
-    //         var $ = window.jQuery;
-    //         console.log($("body").text());
-    //     }
-    // );
-});
-
-function saveToFile() {
-
+function saveToFile(htmlContent) {
+    console.log(htmlContent)
 }
 
 

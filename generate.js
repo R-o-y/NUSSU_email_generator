@@ -20,11 +20,12 @@ function generateEmailFileFrom(data) {
     var document = dom.window.document;
     var $ = jquery(dom.window);
 
-    // manipulate logic here
+    /* ------------------ manipulate logic here ----------- */
 
 
-    saveToFile($('html')[0].outerHTML);
-    // saveToFile(document.documentElement.outerHTML);
+
+    // saveToFile($('html')[0].outerHTML);
+    saveToFile(document.documentElement.outerHTML);
 }
 
 function saveToFile(htmlContent) {

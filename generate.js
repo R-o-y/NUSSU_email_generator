@@ -1,9 +1,9 @@
 var fs = require('fs')
 var createHTML = require('create-html')
-// var jsdom = require('jsdom');
+var jsdom = require("jsdom");
+var { JSDOM } = jsdom;
+var jquery = require("jquery");
 
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
 
 fs.readFile("test.html", 'utf8', function (err, data) {
     if (err) {
@@ -18,10 +18,11 @@ function generateEmailFileFrom(data) {
     
     var document = dom.window.document;
 
-    // document.querySelector("div").textContent = "asdfadfasdfa"
-    // console.log(document.querySelector("div").textContent)
+    var $ = jquery(dom.window);
 
-    saveToFile(document.documentElement.outerHTML);
+    console.log($("body").html())
+
+    // saveToFile(document.documentElement.outerHTML);
 }
 
 function saveToFile(htmlContent) {

@@ -18,7 +18,6 @@ fs.readFile(TEMPLATE_NAME, 'utf8', function (err, data) {
 
 function insertEventSummaries($) {
     var $ = $
-
     var count = 0
     var container = $('#event-summaries-container')
     var newEventSummaryRowContainer = undefined
@@ -68,7 +67,6 @@ function generateEmailFileFrom(data) {
     var $ = jquery(dom.window);
 
     /* ------------------ manipulate logic here ----------- */
-
     insertEventSummaries($)
     insertEventDetails($)
 

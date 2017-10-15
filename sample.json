@@ -1,0 +1,34 @@
+[
+    {
+        "title": "test3",
+        "organization": "NUS Students' Sports Club3",
+        "description": "desc3",
+        "thumbnail_link": "./test_files/Display Image (230(w) x 150(h) px).jpg",
+        "poster_link": "./test_files/training-ws-poster.jpg",
+        "detail_description": "detail_desc3"
+    },
+    {
+        "title": "test4",
+        "organization": "NUS Students' Sports Club4",
+        "description": "desc4",
+        "thumbnail_link": "./test_files/Display Image (230(w) x 150(h) px).jpg",
+        "poster_link": "./test_files/training-ws-poster.jpg",
+        "detail_description": "detail_desc4"
+    },
+    {
+        "title": "test3",
+        "organization": "NUS Students' Sports Club3",
+        "description": "desc3",
+        "thumbnail_link": "./test_files/Display Image (230(w) x 150(h) px).jpg",
+        "poster_link": "./test_files/training-ws-poster.jpg",
+        "detail_description": "detail_desc3"
+    },
+    {
+        "title": "test4",
+        "organization": "NUS Students' Sports Club4",
+        "description": "desc4",
+        "thumbnail_link": "./test_files/Display Image (230(w) x 150(h) px).jpg",
+        "poster_link": "./test_files/training-ws-poster.jpg",
+        "detail_description": "detail_desc4"
+    }
+]

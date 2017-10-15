@@ -1,0 +1,5 @@
+operations to take:
+
+- change date
+- append to event summaries (row by row)
+- append to event details (one by one)
